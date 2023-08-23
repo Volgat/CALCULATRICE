@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>TI-83 PREMIUM CE</title>
+<style type="text/css">
+#body{
+	background-color:gray;
+	color:black;
+	font-size:small;
+}
+
+.input{
+    width:475px; 
+    height:225px; 
+    background-color:white;
+    font-size: 300%;
+}
+.input-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-image: url('ecrancalculatrice2.png');
+    background-size: cover;
+}
+#table{
+	background-color:black;
+	color:white;
+	border:2px solid black;
+	width:550px;
+	height:750px;
+	border-radius: 50px;
+
+}
+
+#tablei1{
+	background-color:#333333;
+	border:2px solid black;
+	width:475px;
+	height:225px;
+	text-align:center;
+}
+
+#tablei2{
+	background-color:white;
+	border:2px solid black;
+	width:475px;
+	height:525px;
+	font-weight:bolder
+	
+}
+
+.rcorner{
+  border-radius:25px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+.n-color{
+	background-color:gray;
+}
+
+.bfts{
+	font-size:x-large;
+}
+
+.button{
+	border-color:black;
+    text-align:center;
+    color:black;
+    padding:16px 32px;
+    transition-duration:0.4s;
+    cursor: pointer;
+    margin: 10px 5px;
+    text-decoration:none;
+    display:inline-block;
+    outline:none;
+} 
+
+.button1 {
+  background-color:blue;
+  color:black;
+  border: 2px solid black;
+  border-radius:7px;
+  font-size:x-large;
+  width:90px;
+  height:50px; 
+  
+}
+
+.button1:active {
+  background-color:blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  background-color:white;
+  color:black;
+  border: 2px solid black;
+  border-radius:7px;
+  font-size:x-large;
+  width:90px;
+  height:50px;
+}
+
+.button2:hover {
+  background-color:green;
+  color:black;
+}
+
+.button2:active {
+  background-color:#3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button3 {
+  background-color:gray;
+  color:black;
+  border: 2px solid black;
+  border-radius:7px;
+  font-size:x-large;
+  width:90px;
+  height:50px;
+}
+
+.button3:active {
+  background-color:gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button4 {
+  background-color:red;
+  color:black;
+  border: 2px solid black;
+  border-radius:7px;
+  font-size:x-large;
+  width:90px;
+  height:50px;
+}
+
+.button4:active {
+  background-color:red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.on {
+    background-color: white;
+    color: black;
+  }
+
+  .off {
+    background-color: black;
+    color: white;
+  }
+
+</style>
+</head>
+<body id="body">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <table align="center" id="table" class="rcorner">
+                        <tr >
+                            <td>
+                                <center style="font-size:xx-large">TI-83 Premium CE</center><br/>
+                                <table  align="center" id="tablei1" class="rcorner">
+                                    <tr>
+                                        <td>
+                                            <div id="calculatorDisplay"  class="input">
+                                                <div class="input-image off on" id="powerScreen"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table  align="center" id="tablei2" class="rcorner">
+                                    <tr>
+                                        <td><button class="button1">2nd</button></td>
+                                        <td><button class="button1">mode</button></td>
+                                        <td><button class="button1">suppr</button></td>
+                                        <td><button class="button1">trace</button></td>
+                                        <td><button class="button1">graphe</button></td>
+                                    </tr>
+                                    <br/>
+                                    <tr>
+                                        <td><button class="button2">alpha</button></td>
+                                        <td><button class="button2">X,T,θ,n</button></td>
+                                        <td><button class="button2">stats</button></td>
+                                        <td><button class="button2"><b class="bfts">⇧</b></button></td>
+                                        <td><button class="button2">zoom</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">math</button></td>
+                                        <td><button class="button2">matrice</button></td>
+                                        <td><button class="button2"><b class="bfts">⇦</b></button></td>
+                                        <td><button class="button2"><b class="bfts">⇩</b></button></td>
+                                        <td><button class="button2"><b class="bfts">⇨</b></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">trig</button></td>
+                                        <td><button class="button2">f(x)</button></td>
+                                        <td><button class="button2">prgm</button></td>
+                                        <td><button class="button2">var</button></td>
+                                        <td><button class="button2">annul</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">résol</button></td>
+                                        <td><button class="button2">兀</button></td>
+                                        <td><button class="button2">intégral</button></td>
+                                        <td><button class="button2">quitter</button></td>
+                                        <td><button class="button2">∧</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">x²</button></td>
+                                        <td><button class="button2">,</button></td>
+                                        <td><button class="button2">(</button></td>
+                                        <td><button class="button2">)</button></td>
+                                        <td><button class="button2">➗</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">log</button></td>
+                                        <td><button class="button3">7</button></td>
+                                        <td><button class="button3">8</button></td>
+                                        <td><button class="button3">9</button></td>
+                                        <td><button class="button2">✖️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">ln</button></td>
+                                        <td><button class="button3">4</button></td>
+                                        <td><button class="button3">5</button></td>
+                                        <td><button class="button3">6</button></td>
+                                        <td><button class="button2">➖ </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">sto →</button></td>
+                                        <td><button class="button3">1</button></td>
+                                        <td><button class="button3">2</button></td>
+                                        <td><button class="button3">3</button></td>
+                                        <td><button class="button2">➕ </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button4" onclick="toggleCalculator()">on/off</button></td>
+                                        <td><button class="button3">0</button></td>
+                                        <td><button class="button3">.</button></td>
+                                        <td><button class="button3">(-)</button></td>
+                                        <td><button class="button2">entrer</button></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="300px"><br></td>
+                <td>
+                    <table align="center" id="table" class="rcorner">
+                        <tr >
+                            <td>
+                                <center style="font-size:xx-large">TI-83 Premium CE</center><br/>
+                                <table  align="center" id="tablei1" class="rcorner">
+                                    <tr>
+                                        <td>
+                                            <input type="text" id ="display" class="input" disabled>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table  align="center" id="tablei2" class="rcorner">
+                                    <tr>
+                                        <td><button class="button1" onclick="appendToDisplay('2nd')">2nd</button></td>
+                                        <td><button class="button1" onclick="appendToDisplay('mode')">mode</button></td>
+                                        <td><button class="button1" onclick="removeLastCharacter()">suppr</button></td>
+                                        <td><button class="button1" onclick="appendToDisplay('trace')">trace</button></td>
+                                        <td><button class="button1" onclick="appendToDisplay('graphe')">graphe</button></td>
+                                    </tr>
+                                    <br/>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('alpha')">alpha</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('X,T,θ,n')">X,T,θ,n</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('stats')">stats</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('⇧')"><b class="bfts">⇧</b></button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('zoom')">zoom</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('math')">math</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('matrice')">matrice</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('⇦')"><b class="bfts">⇦</b></button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('⇩')"><b class="bfts">⇩</b></button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('⇨')"><b class="bfts">⇨</b></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('trig')">trig</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('f(x)')">f(x)</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('prgm')">prgm</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('var')">var</button></td>
+                                        <td><button class="button2" onclick="clearDisplay()">annul</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2">résol</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('兀')">兀</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('intégral')">intégral</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('quitter')">quitter</button></td>
+                                        <td><button class="button2" onclick="handleExponent()">∧</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="square()">x²</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay(',')">,</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('(')">(</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay(')')">)</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('/')">➗</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('log')">log</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('7')">7</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('8')">8</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('9')">9</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('*')">✖️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('ln')">ln</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('4')">4</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('5')">5</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('6')">6</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('-')">➖ </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button2" onclick="appendToDisplay('sto →')">sto →</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('1')">1</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('2')">2</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('3')">3</button></td>
+                                        <td><button class="button2" onclick="appendToDisplay('+')">➕ </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="button4" onclick="clearDisplay()">on/off</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('0')">0</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('.')">.</button></td>
+                                        <td><button class="button3" onclick="appendToDisplay('-')">(-)</button></td>
+                                        <td><button class="button2" onclick="calculate()">entrer</button></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
+
+<script>
+    let displayValue = '';
+    let is2ndMode = false;
+    let isCalculatorOn = false;
+    
+    function toggleCalculator() {
+        isCalculatorOn = !isCalculatorOn;
+        const calculatorDisplay = document.getElementById('calculatorDisplay');
+        const powerScreen = document.getElementById('powerScreen');
+        
+        if (isCalculatorOn) {
+            calculatorDisplay.style.display = 'block';
+            calculatorDisplay.querySelector('.input-image').style.display = 'none';
+            powerScreen.classList.remove('off');
+            powerScreen.classList.add('on');
+        } else {
+            calculatorDisplay.style.display = 'block';
+            calculatorDisplay.querySelector('.input-image').style.display = 'block';
+            powerScreen.classList.remove('on');
+            powerScreen.classList.add('off');
+        }
+    }
+    
+    function appendToDisplay(value) {
+        if (is2ndMode) {
+            displayValue += "2nd " + value;
+            is2ndMode = false;
+        } else {
+            displayValue += value;
+        }
+        updateDisplay();
+    }
+    
+    function updateDisplay() {
+        document.getElementById('display').value = displayValue;
+    }
+
+    function calculate() {
+        try {
+            const result = eval(displayValue);
+            displayValue = result.toString();
+            updateDisplay();
+        } catch (error) {
+            displayValue = 'Error';
+            updateDisplay();
+        }
+    }
+
+
+    function clearDisplay() {
+        displayValue = '';
+        updateDisplay();
+    }
+
+
+    function removeLastCharacter() {
+        displayValue = displayValue.slice(0, -1); // Supprimer le dernier caractère
+        updateDisplay();
+    }
+
+
+    function handleExponent() {
+        displayValue += "^";
+        updateDisplay();
+    }
+
+    function square() {
+        const lastChar = displayValue.slice(-1);
+        if (lastChar === ")") {
+            // If the last character is a closing parenthesis, multiply the value by itself
+            displayValue = displayValue.slice(0, -1) + "x²";
+        } else {
+            displayValue += "*" + displayValue;
+        }
+        updateDisplay();
+    }
+    
+
+
+    function handleButtonClick(buttonValue) {
+        if (buttonValue === 'entrer') {
+            calculate();
+        } else if (buttonValue === 'annul') {
+            clearDisplay();
+        } else if (buttonValue === '2nd') {
+            is2ndMode = true;
+        } else if (buttonValue === '^') {
+            handleExponent();
+        } else if (buttonValue === 'x²') {
+            square();
+        } else {
+            appendToDisplay(buttonValue);
+        }
+    }
+
+    
+    const buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            handleButtonClick(button.value);
+        });
+    });
+
+    updateDisplay();
+</script>
